@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil dan Peminjaman Buku</title>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif ;
+        background-color: azure;
+    }
+    #foto {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #foto img {
+        width: 500px; 
+        height: 400px; 
+    }
+
+    #buku {
+        text-align: justify;
+    }
+
+    #jumlah {
+        padding: 2px 7px;  
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        font-size: 16px; 
+    }
+</style>
+</head>
+<body>
+
+<div id="foto">
+    <img src="egagtg.jpeg">
+    <h1>EGA ALFARABI</h1>
+    <b><p>6701223015</p></b>
+    <b><p>D3SI4604</p></b>
+</div>
+
+<hr>
+<br>
+<div id="buku">
+    <label for="jumlah">Jumlah:</label>
+    <input type="text" id="jumlah"><br><br>
+    
+    <label for="buku">Stock buku:</label>
+    <select id="buku">
+        <option value="sherlock">sherlock</option>
+        <option value="lupin">lupin</option>
+        <option value="aladin">aladin</option>
+    </select><br><br>
+    <button onclick="pinjamBuku()">Pinjam Buku</button>
+</div>
+<script src="web.js"></script>
+
+</body>
+</html>
